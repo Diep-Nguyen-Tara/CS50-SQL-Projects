@@ -1,0 +1,38 @@
+SELECT
+AVG(energy) AS avg_energy,
+AVG(valence) AS avg_valence,
+AVG(danceability) AS avg_danceability
+FROM
+songs;
+
++------------+-------------+------------------+
+| avg_energy | avg_valence | avg_danceability |
++------------+-------------+------------------+
+| 0.65906    | 0.484443    | 0.71646          |
++------------+-------------+------------------+
+
+because the average energy and danceability are high, the listener's audio aura might be characterized as "energetic" and "danceable."
+
+---
+
+Hypotheses for why this calculation might not be very representative of the listener's overall musical preferences:
+
+Limited Sample Size: Using only the top 100 songs from a year might not capture the full diversity of our music taste. We may enjoy a wide range of music, including genres and styles not represented in our top 100 songs.
+
+Context and Mood: Music preferences can change based on our mood and context. Our top songs from a particular year might be influenced by our emotional state during that time. To get a more accurate audio aura, it would be helpful to consider a longer time frame or consider our music preferences across multiple years.
+
+Influence of Popular Hits: The top songs from a year might include popular hits that are widely played but not necessarily reflective of our core music preferences. Such hits could skew the audio aura calculation.
+
+Lack of Personalization: The calculation of audio aura is based solely on musical attributes (energy, valence, danceability), which may not take into account the personal and sentimental connections we have with certain songs or artists. It doesn't consider lyrics or themes that might be personally meaningful to us.
+
+To make the audio aura more representative, we could:
+
+Consider Longer Time Frames: Instead of just one year, look at a broader time frame to capture our evolving musical preferences.
+
+Include User Feedback: Incorporate feedback from the user regarding the significance of certain songs or artists in our life.
+
+Account for Lyrics and Themes: Consider the lyrical content and themes of the songs, as these can have a significant impact on our emotional response to music.
+
+Machine Learning and Personalization: Use machine learning algorithms to learn from our historical listening patterns and make more personalized recommendations and audio aura calculations.
+
+Surveys and Questionnaires: Allow users to provide additional context about their music preferences and moods through surveys or questionnaires, which can be used to refine the audio aura calculation.
